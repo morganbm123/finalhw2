@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HomeworkRound2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="teamWins">Team Wins</string>
+    <string name="teamLosses">Team Losses</string>
+    <string name="playerPosition">Player Position</string>
+    <string name="vancouverTeam">vancouverTeam</string>
+    <string name="currentTeam">Current Team</string>
+    <string name="currentTeamDisplay">Current team</string>
+    <string name="currentWinsforTeam">Current team wins</string>
+    <string name="lossesForEachTeam">Current Losses for Team</string>
+    <string name="editablePlayerPosition">Current Player Position</string>
+    <string name="editablePlayerNumber">Player Number</string>
+    <string name="saltLakeTeam">realSaltLake</string>
+    <string name="teamModification">Modify Team</string>
+    <string name="title_activity_change_team">ChangeTeamActivity</string>
+    <string name="eRoner">erikRonerSkier</string>
+    <string name="johnMacenrow">johnMac</string>
+    <string name="julio_jones">julio</string>
+    <string name="martyFly">marty</string>
+    <string name="playerAddition">Player Name</string>
+    <string name="newPlayerPositionAddition">Player Position</string>
+    <string name="editPlayerNumber">Player Number</string>
+</resources>

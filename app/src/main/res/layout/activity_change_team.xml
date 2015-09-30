@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.finalhw2.ChangeTeamActivity"
+    android:orientation="vertical"
+    android:background="#fff8a7ff"
+    android:id="@+id/mainLayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="309dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="144dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPlayer"
+                android:autoText="false"
+                android:editable="false"
+                android:text="@string/playerAddition"
+                android:inputType="text"
+                android:textSize="40sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPlayerPosition"
+                android:autoText="false"
+                android:editable="false"
+                android:text="@string/newPlayerPositionAddition"
+                android:inputType="text"
+                android:textSize="40sp"
+                android:layout_marginLeft="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/newPlayerNumber"
+                android:autoText="false"
+                android:editable="false"
+                android:text="@string/editPlayerNumber"
+                android:textSize="40sp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Teams"
+                    android:id="@+id/textView"
+                    android:textSize="30sp" />
+
+                <Spinner
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teamSpinner"
+                    android:focusableInTouchMode="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Players"
+                    android:id="@+id/textView2"
+                    android:textSize="30sp" />
+
+                <Spinner
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playerSpinner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Player"
+                    android:id="@+id/textView3"
+                    android:textSize="30sp" />
+
+                <Spinner
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newPlayerSpinner" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return Home"
+        android:id="@+id/returnButton"
+        android:onClick="btnReturnToMain" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerHolderTop"
+        android:weightSum="1"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/playerHolder"
+            android:layout_weight="1.20">
+
+            <ImageButton
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/erikRoner"
+                android:src="@drawable/roner"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/eRoner" />
+
+            <ImageButton
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/johnMcenrow"
+                android:src="@mipmap/jmac"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/johnMacenrow" />
+
+            <ImageButton
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/julioJones"
+                android:src="@drawable/juliojones"
+                android:scaleType="centerCrop"
+                android:focusableInTouchMode="true"
+                android:contentDescription="@string/julio_jones" />
+
+            <ImageButton
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/martyMcfly"
+                android:src="@drawable/martymcfly"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/martyFly" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

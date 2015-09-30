@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basicBackgroud"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:background="#ffff304c"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/saltLakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/saltLakeTeam"
+        android:src="@drawable/saltlake" />
+
+
+
+    <LinearLayout
+        android:id="@+id/teamInfoDisplay"
+        android:layout_width="895dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        android:background="#ff000000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/currentteamHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/currentTeamButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="btnPictureChangeHandler"
+                android:text="@string/currentTeam"
+
+
+                />
+
+            <TextView
+                android:id="@+id/currentTeams"
+                android:layout_width="107dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:background="#ffffffff"
+                android:text="@string/currentTeamDisplay"
+                android:textAlignment="center"
+                android:textColor="#ff000000"
+
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Wins"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamWins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="45dp"
+                android:paddingLeft="10dp"
+                android:text="@string/teamWins"
+                android:textAlignment="center"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamWinInput"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffffffff"
+                android:text="@string/currentWinsforTeam"
+                android:textColor="#ff000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Losses"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamLossNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="45dp"
+                android:paddingLeft="10dp"
+                android:text="@string/teamLosses"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamCurrentLoss"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffffffff"
+                android:enabled="true"
+                android:text="Current team losses"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playerPositionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playerPosShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="45dp"
+                android:paddingLeft="10dp"
+                android:text="Player Position"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/playerPosEditable"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:background="#ffffffff"
+                android:text="@string/editablePlayerPosition"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/playerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/playerNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="45dp"
+                android:paddingLeft="10dp"
+                android:text="Player Number"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PlayerNumEditable"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="30dp"
+                android:background="#ffffffff"
+                android:text="@string/editablePlayerNumber"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/changeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="btnActivityChange"
+                android:paddingRight="30dp"
+                android:text="@string/teamModification"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
